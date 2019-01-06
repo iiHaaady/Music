@@ -7,8 +7,6 @@ let mtickets   = true;
 let tchannels  = [];
 let current    = 0;
 
-hero.login(process.env.ROYALE_TOKEN);
-
 hero.on('ready',async () => console.log(`   - " ${hero.user.username} " , Tickety is ready to work.`));
 hero.on('message',async message => {
     const emojis   = { yes: `${hero.guilds.find(r => r.id === '520166623395577857').emojis.find(e => e.name === 'Yes')}`, wrong: `${hero.guilds.find(r => r.id === '520166623395577857').emojis.find(e => e.name === 'Wrong')}` };
